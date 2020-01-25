@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Blogs API</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+    <h1> BLOG CRUD </h1>
+
+    <form>
+        <label>
+          Add a post
+        </label>
+        <input id="idInput" class="textInput" type="text" placeholder="Id">
+        <input id="titleInput" class="textInput" type="text" placeholder="Title">
+        <input id="contentInput" class="textInput" type="text" placeholder="Content">
+        <input id="authorInput" class="textInput" type="text" placeholder="Author">
+        <input id="dateInput" class="textInput" type="text" placeholder="mm/dd/yy">
+        
+        
+        <button id="AddPost" >
+            Add
+        </button>
+        <button id="UpdatePost" >
+            Update
+        </button>
+
+    </form>
+
+    <form>
+        <label>
+          Search Post By Author
+        </label>
+        <input id="authorSearch" class="textInput" type="text">
+        <button id="SearchAuthor">
+          Search
+        </button>
+    </form>
+
+    <form>
+        <label>
+          Delete Post By Id
+        </label>
+        <input id="idDelete" class="textInput" type="text">
+        
+        <button id="Delete">
+          Delete
+        </button>
+    </form>
+
+    <ul class="list"></ul>
+
+    <button id="LoadAll">LoadAll</button>
+
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script src = "js/index.js"></script>
+</body>
+</html>
